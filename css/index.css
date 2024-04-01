@@ -1,0 +1,162 @@
+/* CMD + SHIFT + 7 */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .125rem;
+}
+
+.header {
+    width: 100%;
+    min-height: 6.25rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 400;
+
+}
+
+.header .menu {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    gap: 2.5rem;
+}
+
+
+.fondo {
+    min-height: 600px;
+    width: 100%;
+    background-color: lightgoldenrodyellow;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.fondo .img {
+    width: 100%;
+    text-align: center;
+    font-size: 10vw;
+}
+
+.destacado {
+    width: 80%;
+
+    margin: 6.25rem auto;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 1.25rem;
+}
+
+.destacado .item {
+    width: calc(100% / 3);
+}
+
+.destacado .item .img {
+    min-height: 9.375rem;
+    background-color: lightgoldenrodyellow;
+    margin-bottom: 1.5rem;
+}
+
+.destacado .item .texto {
+    text-align: center;
+    
+}
+
+.footer {
+    width: 100%;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.footer .rrss {
+    margin-bottom: 3.4375rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+.footer .text {
+    width: 80%;
+    max-width: 25rem;
+    margin-bottom: 1.25rem;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    gap: .625rem;
+    text-decoration: underline;
+    font-weight: 200;
+    line-height: 40px;
+}
+
+
+.copyright {
+    margin-bottom: 2.5rem;
+}
+
+.boton {
+    margin-bottom: 2.5rem;
+    padding: .625rem 1.25rem;
+    background-color: lightgray;
+    font-size: .75rem;
+    letter-spacing: .0625rem;
+    color: green;
+
+}
+
+@media (max-width: 75rem) {
+    .fondo {
+        background-color: green;
+    }
+}
+
+@media (max-width: 75rem) {
+    .header .menu {
+        display: none;
+    }
+}
+
+@media (max-width: 75rem) {
+    .header {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 50rem) {
+    .destacado {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 50rem) {
+    .destacado .item {
+        width: 100%;
+        flex-direction: column;
+    }
+}
